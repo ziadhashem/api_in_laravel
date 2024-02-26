@@ -26,6 +26,7 @@ Route::middleware('auth:api')->group(/**
     });
     Route::resource('products',ProductController::class);
     Route::resource('users',UserController::class);
+    Route::resource('product_prices',\App\Http\Controllers\ProductPriceController::class);
 });
 
 
